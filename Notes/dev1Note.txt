@@ -1,0 +1,5 @@
+todo
+
+- windows to android build
+- di ma move yung pov ng camera. nakaconnect sa mouse yung controls at pov
+-

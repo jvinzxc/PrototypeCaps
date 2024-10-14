@@ -11,7 +11,7 @@ public class Hitbox : MonoBehaviour
     public int animalHp = 100;
     public int currentHp;
     public Animator animator;
-    private Animal animal;
+    public Animal animal;
     private Shoot shot;
     
 
@@ -21,6 +21,8 @@ public class Hitbox : MonoBehaviour
     public QuestGiver giver;
     AudioControl audioManager;
 
+
+    public GameObject panel;
     void Start()
     {
         animal = GetComponent<Animal>();
@@ -45,7 +47,8 @@ public class Hitbox : MonoBehaviour
             animal.health = 0;
             animal.StopAllCoroutines();
             animal.StartCoroutine(animal.StopMoving());
-            //animal.enabled = false;
+            //animal.enabled = false;       
+            panel.SetActive(true);
         }
         else
         {
