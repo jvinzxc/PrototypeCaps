@@ -22,6 +22,7 @@ public class AnimalDisease : MonoBehaviour
         if(showMessage > 0)
         {
             Destroy(panel);
+            //panel.SetActive(false);
         }
     }
     void OnButtonClick()

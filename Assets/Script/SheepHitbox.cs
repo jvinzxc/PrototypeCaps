@@ -23,6 +23,8 @@ public class Hitbox : MonoBehaviour
 
 
     public GameObject panel;
+    public GameObject syringePanel;
+    private int healAnimal = 0;
     void Start()
     {
         animal = GetComponent<Animal>();
@@ -68,12 +70,22 @@ public class Hitbox : MonoBehaviour
         }
         if (animalHp == 100)
         {
+            //trigger syringe panels
+            if (healAnimal == 0)
+            {
+                syringePanel.SetActive(true);
+                healAnimal++;
+            }
+            
             //revive animation
             animator.SetTrigger("healed");
             animal.StartCoroutine(animal.WaitToMove());
             audioManager.PlaySFX(audioManager.InjectionHeal);
             player.gold += 10;
             goal.AnimalHealed();
+            
+
+
         }
         animal.health = animalHp;
         health.SetHealth(animalHp);
