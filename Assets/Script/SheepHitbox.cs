@@ -22,7 +22,7 @@ public class Hitbox : MonoBehaviour
     AudioControl audioManager;
 
 
-    public GameObject panel;
+    public GameObject tranqPanel;
     public GameObject syringePanel;
     private int healAnimal = 0;
     void Start()
@@ -50,7 +50,7 @@ public class Hitbox : MonoBehaviour
             animal.StopAllCoroutines();
             animal.StartCoroutine(animal.StopMoving());
             //animal.enabled = false;       
-            panel.SetActive(true);
+            tranqPanel.SetActive(true);
         }
         else
         {
