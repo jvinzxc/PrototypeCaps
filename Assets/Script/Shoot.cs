@@ -85,7 +85,7 @@ public class Shoot : MonoBehaviour
             Reload();
         }
     }
-    private void Fire()
+    public void Fire()
     {
         currentAmmo--;
         muzzleFlash.Play();
