@@ -20180,7 +20180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &639456593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30531,6 +30531,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1320731106}
+        m_TargetAssemblyTypeName: AlmanacScript, Assembly-CSharp
+        m_MethodName: cureBtnOkay
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -41164,6 +41176,22 @@ MonoBehaviour:
   blkm: {fileID: 1860805674}
   bvd: {fileID: 1137103434}
   blkbvd: {fileID: 1519993676}
+  eytenwan: {fileID: 1494034646}
+  eytenwanlock: {fileID: 220746647}
+  siksenwan: {fileID: 1319934741}
+  siksenwanlock: {fileID: 108676091}
+  paybenwan: {fileID: 398534877}
+  paybenwanlock: {fileID: 1088987315}
+  efpi: {fileID: 245745419}
+  efpilock: {fileID: 977585441}
+  bsg: {fileID: 624394989}
+  bsglock: {fileID: 286001494}
+  doxy: {fileID: 1507486439}
+  doxylock: {fileID: 2028063049}
+  enro: {fileID: 1628065083}
+  enrolock: {fileID: 1364820430}
+  marbo: {fileID: 2062225696}
+  marbolock: {fileID: 384242162}
 --- !u!1 &1321118115
 GameObject:
   m_ObjectHideFlags: 0
@@ -45494,6 +45522,22 @@ MonoBehaviour:
   blkm: {fileID: 0}
   bvd: {fileID: 0}
   blkbvd: {fileID: 0}
+  eytenwan: {fileID: 0}
+  eytenwanlock: {fileID: 0}
+  siksenwan: {fileID: 0}
+  siksenwanlock: {fileID: 0}
+  paybenwan: {fileID: 0}
+  paybenwanlock: {fileID: 0}
+  efpi: {fileID: 0}
+  efpilock: {fileID: 0}
+  bsg: {fileID: 0}
+  bsglock: {fileID: 0}
+  doxy: {fileID: 0}
+  doxylock: {fileID: 0}
+  enro: {fileID: 0}
+  enrolock: {fileID: 0}
+  marbo: {fileID: 0}
+  marbolock: {fileID: 0}
 --- !u!1 &1449778529
 GameObject:
   m_ObjectHideFlags: 0

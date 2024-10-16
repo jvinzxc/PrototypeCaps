@@ -43,6 +43,32 @@ public class AlmanacScript : MonoBehaviour
     public GameObject bvd;
     public GameObject blkbvd;
 
+    //cures
+
+    public GameObject eytenwan;
+    public GameObject eytenwanlock;
+
+    public GameObject siksenwan;
+    public GameObject siksenwanlock;
+
+    public GameObject paybenwan;
+    public GameObject paybenwanlock;
+
+    public GameObject efpi;
+    public GameObject efpilock;
+
+    public GameObject bsg;
+    public GameObject bsglock;
+
+    public GameObject doxy;
+    public GameObject doxylock;
+
+    public GameObject enro;
+    public GameObject enrolock;
+
+    public GameObject marbo;
+    public GameObject marbolock;
+
 
     private void Start()
     {
@@ -126,6 +152,12 @@ public class AlmanacScript : MonoBehaviour
                 int upNum = curNum++;
                 PlayerPrefs.SetInt("anum", upNum);
             }
+            else if (animalNum == 3)
+            {
+                int curNum = PlayerPrefs.GetInt("anum");
+                int upNum = curNum++;
+                PlayerPrefs.SetInt("anum", upNum);
+            }
         }
     }
     public void CowOkayClicked()
@@ -154,12 +186,41 @@ public class AlmanacScript : MonoBehaviour
                 int upNum = curNum++;
                 PlayerPrefs.SetInt("anum", upNum);
             }
+            else if (animalNum == 3)
+            {
+                int curNum = PlayerPrefs.GetInt("anum");
+                int upNum = curNum++;
+                PlayerPrefs.SetInt("anum", upNum);
+            }
         }
     }
     public void ChickenOkayBtn()
     {
         chicken.SetActive(true);
         blkchicken.SetActive(false);
+
+        animalNum++;
+        PlayerPrefs.SetInt("anum", animalNum);
+        text.text = animalNum.ToString();
+
+        if (animalNum == 1)
+        {
+            int curNum = PlayerPrefs.GetInt("anum");
+            int upNum = curNum++;
+            PlayerPrefs.SetInt("anum", upNum);
+        }
+        else if (animalNum == 2)
+        {
+            int curNum = PlayerPrefs.GetInt("anum");
+            int upNum = curNum++;
+            PlayerPrefs.SetInt("anum", upNum);
+        }
+        else if (animalNum == 3)
+        {
+            int curNum = PlayerPrefs.GetInt("anum");
+            int upNum = curNum++;
+            PlayerPrefs.SetInt("anum", upNum);
+        }
     }
     public void diseaseBtnOkay()
     {
@@ -182,5 +243,37 @@ public class AlmanacScript : MonoBehaviour
             blkbvd.SetActive(false);
         }
 
+    }
+
+    public void cureBtnOkay()
+    {
+        int nm = PlayerPrefs.GetInt("anum");
+        if (nm == 4)
+        {
+            eytenwan.SetActive(true);
+            eytenwanlock.SetActive(false);
+
+            siksenwan.SetActive(true);
+            siksenwanlock.SetActive(false);
+
+            paybenwan.SetActive(true);
+            paybenwanlock.SetActive(false);
+
+            efpi.SetActive(true);
+            efpilock.SetActive(false);
+
+            bsg.SetActive(true);
+            bsglock.SetActive(false);
+
+            doxy.SetActive(true);
+            doxylock.SetActive(false);
+
+            enro.SetActive(true);
+            enrolock.SetActive(false);
+
+            marbo.SetActive(true);
+            marbolock.SetActive(false);
+
+        }
     }
 }
