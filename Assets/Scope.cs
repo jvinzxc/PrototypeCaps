@@ -27,7 +27,6 @@ public class Scope : MonoBehaviour
     public GameObject AlmanacButton;
     public GameObject ScopeButton;
 
-
     InputAction scope;
     //public float ScopeFov = 10f;
     //private float NormalFov;
@@ -44,7 +43,6 @@ public class Scope : MonoBehaviour
         if (shot.isReloading || shot.currentAmmo == 0)
         {
             OnUnscoped();
-            
         }
         else
         {
@@ -84,7 +82,7 @@ public class Scope : MonoBehaviour
         MainCamera.fieldOfView = 10;
         MainCamera.cullingMask = MainCamera.cullingMask & ~(1 << 7);
     }
-    void OnUnscoped()
+    public void OnUnscoped()
     {
         animator.SetBool("Scoped", false);
         ScopeOverlay.SetActive(false);
@@ -101,6 +99,10 @@ public class Scope : MonoBehaviour
         TutorialButton.SetActive(true);
         MainCamera.fieldOfView = 60;
         MainCamera.cullingMask = MainCamera.cullingMask | (1 << 7);
+    }
+    public void ScopeActivated()
+    {
+        StartCoroutine(OnScoped());
     }
     //old code
     /*private void Update()

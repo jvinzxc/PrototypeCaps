@@ -22,9 +22,13 @@ public class QuestGiver : MonoBehaviour
         questWindow.SetActive(true);
         goldText.text = goldreward.ToString();
     }
-    public void AcceptQuest()
+    /*public void AcceptQuest()
     {
-        questWindow.SetActive(false);
+        questWindow.SetActive(false);   
+        isActive = true;
+    }*/
+    private void Start()
+    {
         isActive = true;
     }
     public void Complete()

@@ -27,7 +27,6 @@ public class Switch : MonoBehaviour
         foreach(Transform weapon in transform)
         {
             weapon.gameObject.SetActive(false);
-
         }
         transform.GetChild(items).gameObject.SetActive(true);
     }
@@ -92,6 +91,19 @@ public class Switch : MonoBehaviour
         foreach (Transform weapon in transform)
         {
             weapon.gameObject.SetActive(false); 
+        }
+        transform.GetChild(items).gameObject.SetActive(true);
+    }
+    public void SwitchWeapon()
+    {
+        items++;
+        if(items == 3)
+        {
+            items = 0;
+        }
+        foreach (Transform weapon in transform)
+        {
+            weapon.gameObject.SetActive(false);
         }
         transform.GetChild(items).gameObject.SetActive(true);
     }
