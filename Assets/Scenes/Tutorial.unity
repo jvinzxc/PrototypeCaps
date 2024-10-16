@@ -45023,6 +45023,7 @@ GameObject:
   - component: {fileID: 1449233621}
   - component: {fileID: 1449233620}
   - component: {fileID: 1449233619}
+  - component: {fileID: 1449233622}
   m_Layer: 5
   m_Name: UI (Android)
   m_TagString: Untagged
@@ -45125,6 +45126,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &1449233622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449233617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9535fa7b382dd2f44829ba92eb96b2f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  almanacPanel: {fileID: 470368296}
 --- !u!1 &1449778529
 GameObject:
   m_ObjectHideFlags: 0
