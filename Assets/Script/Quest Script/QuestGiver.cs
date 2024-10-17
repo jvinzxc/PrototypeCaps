@@ -16,24 +16,23 @@ public class QuestGiver : MonoBehaviour
     public GameObject questWindow;
     public TextMeshProUGUI goldText;
     public GameObject completed;
+    public GameObject Finish;
 
     public void OpenQuestWindow()
     {
         questWindow.SetActive(true);
         goldText.text = goldreward.ToString();
     }
-    /*public void AcceptQuest()
+    public void AcceptQuest()
     {
         questWindow.SetActive(false);   
-        isActive = true;
-    }*/
-    private void Start()
-    {
         isActive = true;
     }
     public void Complete()
     {
         isActive = false;
         completed.SetActive(true);
+        Finish.SetActive(true);
+        Time.timeScale = 0;
     }
 }

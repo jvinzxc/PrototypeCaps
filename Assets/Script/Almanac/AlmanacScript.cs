@@ -78,7 +78,7 @@ public class AlmanacScript : MonoBehaviour
     }
     void Update()
     {
-        if (almanacPanel.activeSelf)
+        /*if (almanacPanel.activeSelf)
         {
             // Pause the game by setting timeScale to 0
             Time.timeScale = 0;
@@ -87,7 +87,7 @@ public class AlmanacScript : MonoBehaviour
         {
             // Resume the game by setting timeScale back to 1
             Time.timeScale = 1;
-        }
+        }*/
 
        
 

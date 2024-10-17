@@ -5,14 +5,9 @@ using UnityEngine;
 public class TutorialUI : MonoBehaviour
 {
     public GameObject tutorials;
-    public void Tutorial()
+    void Start()
     {
         tutorials.SetActive(true);
         Time.timeScale = 0;
-    }
-    public void ExitTutorial()
-    {
-        tutorials.SetActive(false);
-        Time.timeScale = 1;
     }
 }
